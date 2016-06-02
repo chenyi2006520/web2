@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="jquery-2.2.0.js"></script>
+    <title>PM2.5</title>
+    <style>
+        .hidden{overflow-x: hidden; overflow-y: auto;} 
+    </style>
+</head>
+
+<body>
+    <iframe class="hidden" src="http://www.lewei50.com/u/g/17242" width="100%" id="iframepage" height="" scrolling="auto" frameborder="0" marginheight="0"
+    marginwidth="0" onload="iFrameHeight()"></iframe>
+    <script type="text/javascript">
+        $(function(){
+            var thisWH = $(window).height(); //浏览器当前窗口可视区域高度
+            $("#iframepage").height(thisWH);
+        });
+    </script>
+</body>
+
+</html>
